@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather Info</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <link rel = "stylesheet" 
+         href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<div class="container">
+  <div class="row mb-3 mt-5">
+    <div class="col-md-1"></div>
+      <div class="col-md-10 px-4  py-2  text-center "><h4 class="shadow py-2 px-1 bg-info text-white" style="text-transform: uppercase;">Weather Informations</h4></div>
+  </div>
+  <div class="row mb-3 mt-5 px-4">
+    <div class="col-md-1"></div>
+    <div class="col-md-3 py-1 text-center">Enter a location</div>
+    
+    <div class="col-md-5"><form action="" id="form" name="form1"><input type="text" name="place" id="inputs" class="form-control" placeholder="Enter a location" ></form></div>
+  
+    <div class="col-md-2"><button type="button" class="btn btn-primary" onclick="myFunction()">Get Weater Data</button></div>
+    
+  </div>
+    
+    
+    <table class="table table-bordered text-center" style="width:80%;margin:0 auto;">
+        <thead>
+          <tr>
+            <td colspan="2" class="text-center"><img id ="cond_image"></td>
+            
+          
+          </tr>
+          <tr>
+            <th>Description</th>
+            <th>Value</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>Location</td>
+            <td id="loc_name"></td>
+           
+          </tr>
+          <tr>
+            <td>Country </td>
+            <td id="country"></td>
+           
+          </tr>
+          <tr>
+            <td>Date</td>
+            <td id="datetime"></td>
+           
+          </tr>
+          <tr>
+            <td>Time</td>
+            <td id="time"></td>
+           
+          </tr>
+          <tr>
+            <td>Temperature</td>
+            <td id="temp"></td>
+           
+          </tr>
+          <tr>
+            <td>Pressure (mb)</td>
+            <td id="press"></td>
+           
+          </tr>
+          <tr>
+            <td>Condition</td>
+            <td id="condition"></td>
+           
+          </tr>
+          <tr>
+            <td>Cloud</td>
+            <td id="cloud"></td>
+           
+          </tr>
+          <tr>
+            <td>Longitude</td>
+            <td id="long"></td>
+           
+          </tr>
+          <tr>
+            <td>Lattitude</td>
+            <td id="latt"></td>
+           
+          </tr>
+          
+        </tbody>
+      </table>
+</div>
+<script src="main_main.js"></script>
+</body>
+</html>
