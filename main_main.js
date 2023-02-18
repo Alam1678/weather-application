@@ -4,7 +4,7 @@ const weather = {
     convertFrom : '',
     convertTo : '',
     //location : '',
-    async currencyConverts(cat){
+    async getWeatherData(cat){
         try{
             // const res = await fetch(`https://free.currconv.com/api/v7/convert?q=${this.convertFrom}_${this.convertTo},${this.convertTo}_${this.convertFrom}&compact=ultra&apiKey=${this.API_KEY}`);
             const res = await fetch(`https://api.weatherapi.com/v1/current.json?key=${this.API_KEY}&q=${cat}&aqi=no`);
@@ -19,7 +19,7 @@ const weather = {
         // console.log(res);
     }
 }
-// var data = weather.currencyConverts();
+// var data = weather.getWeatherData();
 // console.log(data);
 
 function myFunction()
@@ -34,7 +34,7 @@ var longitude = '';
 var latitude = '';
 var pressure = '';
 //var time = '';
-weather.currencyConverts(place).then(function(result) {
+weather.getWeatherData(place).then(function(result) {
         console.log(result);
         location_name = result.location.name;
         country_name = result.location.country;
