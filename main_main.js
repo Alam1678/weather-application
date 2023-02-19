@@ -67,8 +67,9 @@ weather.getWeatherData(place).then(function(result) {
         document.getElementById("long").innerHTML = longitude;
         document.getElementById("latt").innerHTML = latitude;
         document.getElementById("press").innerHTML = pressure;
-        document.getElementById("cond_image").src = condition_icon;
         document.getElementById("humidity").innerHTML = humidities;
+        document.getElementById("cond_image").src = condition_icon;
+        
     }
 
     function ampam()
