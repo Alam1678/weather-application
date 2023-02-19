@@ -33,6 +33,7 @@ var cloud = '';
 var longitude = '';
 var latitude = '';
 var pressure = '';
+var humidities = '';
 //var time = '';
 weather.getWeatherData(place).then(function(result) {
          console.log(result);
@@ -45,6 +46,7 @@ weather.getWeatherData(place).then(function(result) {
         longitude = result.location.lon;
         latitude = result.location.lat;
         pressure = result.current.pressure_mb;
+        humidities = result.current.humidity;
          temp = result.current.temp_c;
          shows();
          ampam();
@@ -66,6 +68,7 @@ weather.getWeatherData(place).then(function(result) {
         document.getElementById("latt").innerHTML = latitude;
         document.getElementById("press").innerHTML = pressure;
         document.getElementById("cond_image").src = condition_icon;
+        document.getElementById("humidity").src = humidities;
     }
 
     function ampam()
