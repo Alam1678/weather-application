@@ -35,7 +35,7 @@ var latitude = '';
 var pressure = '';
 //var time = '';
 weather.getWeatherData(place).then(function(result) {
-        console.log(result);
+         console.log(result);
         location_name = result.location.name;
         country_name = result.location.country;
         dateTime = result.location.localtime;
