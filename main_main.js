@@ -1,6 +1,8 @@
-window.onload = function(){
-document.getElementById("showMe").style.display= "none";
+
+async loadWindow(){ window.addEventListener('DOMContentLoaded', async () => {
+        document.getElementById("showMe").style.display= "none";
 }
+loadWindow();
 
 const weather = {
     API_KEY : '00938e3ee619481c941123119231102',
