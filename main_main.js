@@ -1,10 +1,14 @@
+window.onload = function(){
+document.getElementById("showMe").style.display= "none";
+}
+
 const weather = {
     API_KEY : '00938e3ee619481c941123119231102',
     //API_KEY : '8e637920d7c1f4ce0b1e',
     convertFrom : '',
     convertTo : '',
     //location : '',
-    document.getElementById("showMe").style.display = "none";
+   
     async getWeatherData(cat){
         try{
             // const res = await fetch(`https://free.currconv.com/api/v7/convert?q=${this.convertFrom}_${this.convertTo},${this.convertTo}_${this.convertFrom}&compact=ultra&apiKey=${this.API_KEY}`);
