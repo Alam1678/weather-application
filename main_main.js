@@ -1,9 +1,3 @@
-
-// async loadWindow(){ window.addEventListener('DOMContentLoaded', async () => {
-//         document.getElementById("showMe").style.display= "block";
-// }
-
-
 const weather = {
     API_KEY : '00938e3ee619481c941123119231102',
     //API_KEY : '8e637920d7c1f4ce0b1e',
@@ -59,7 +53,7 @@ weather.getWeatherData(place).then(function(result) {
          ampam();
          //console.log(temp);
          document.getElementById("inputs").value = '';
-//         loadWindow();
+
     });
     function shows()
     {
