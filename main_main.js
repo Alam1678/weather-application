@@ -1,7 +1,7 @@
-document.getElementById("showMe").style.display= "none";
-async loadWindow(){ window.addEventListener('DOMContentLoaded', async () => {
-        document.getElementById("showMe").style.display= "block";
-}
+
+// async loadWindow(){ window.addEventListener('DOMContentLoaded', async () => {
+//         document.getElementById("showMe").style.display= "block";
+// }
 
 
 const weather = {
@@ -43,7 +43,7 @@ var pressure = '';
 var humidities = '';
 //var time = '';
 weather.getWeatherData(place).then(function(result) {
-         console.log(result);
+//          console.log(result);
         location_name = result.location.name;
         country_name = result.location.country;
         dateTime = result.location.localtime;
@@ -59,7 +59,7 @@ weather.getWeatherData(place).then(function(result) {
          ampam();
          //console.log(temp);
          document.getElementById("inputs").value = '';
-        loadWindow();
+//         loadWindow();
     });
     function shows()
     {
