@@ -59,6 +59,7 @@ weather.getWeatherData(place).then(function(result) {
          ampam();
          //console.log(temp);
          document.getElementById("inputs").value = '';
+        document.getElementById("showMe").style.display= "block";
     });
     function shows()
     {
