@@ -4,6 +4,7 @@ const weather = {
     convertFrom : '',
     convertTo : '',
     //location : '',
+    document.getElementById("showMe").style.display = "none";
     async getWeatherData(cat){
         try{
             // const res = await fetch(`https://free.currconv.com/api/v7/convert?q=${this.convertFrom}_${this.convertTo},${this.convertTo}_${this.convertFrom}&compact=ultra&apiKey=${this.API_KEY}`);
